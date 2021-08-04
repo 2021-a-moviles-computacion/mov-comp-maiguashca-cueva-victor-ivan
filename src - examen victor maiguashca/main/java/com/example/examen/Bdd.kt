@@ -171,7 +171,7 @@ class Bdd(contexto: Context?)
     fun eliminaringrediente(id: Int): Boolean{
         val conexionEscritura = writableDatabase
         val resultdo = conexionEscritura.delete("INGREDIENTE",
-            "INGREDIENTE=?",
+            "id=?",
             arrayOf(id.toString()
             )
         )
