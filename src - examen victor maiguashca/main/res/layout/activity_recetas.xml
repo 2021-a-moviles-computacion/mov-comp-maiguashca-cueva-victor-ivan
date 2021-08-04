@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recetas">
+
+    <TextView
+        android:id="@+id/lblRecetas"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:text="Recetas"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ListView
+        android:id="@+id/lstRecetas"
+        android:layout_width="299dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/lblRecetas"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/lblRecetas"
+        app:layout_constraintTop_toBottomOf="@+id/lblRecetas" />
+
+    <EditText
+        android:id="@+id/txtNombreReceta"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="28dp"
+        android:editable="true"
+        android:hint="Ingrese nombre de receta"
+        app:layout_constraintEnd_toEndOf="@+id/lblNueva"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/lblNueva"
+        app:layout_constraintTop_toBottomOf="@+id/lblNueva" />
+
+    <Button
+        android:id="@+id/btnAgregarReceta"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:text="AGREGAR RECETA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombreReceta"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreReceta"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreReceta"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/lblNueva"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:text="Nueva Receta"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lstRecetas"
+        app:layout_constraintStart_toStartOf="@+id/lstRecetas"
+        app:layout_constraintTop_toBottomOf="@+id/lstRecetas" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDITAR RECETA"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAgregarReceta"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/btnAgregarReceta"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarReceta"
+        app:layout_constraintVertical_bias="0.206" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
