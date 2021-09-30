@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredientes">
+
+    <EditText
+        android:id="@+id/txtLat"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="128dp"
+        android:hint="Ingrese Latitud"
+        app:layout_constraintEnd_toEndOf="@+id/lblUnidad"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblUnidad" />
+
+    <EditText
+        android:id="@+id/txtLon"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="128dp"
+        android:hint="Ingrese longitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLat"
+        app:layout_constraintTop_toBottomOf="@+id/lblUnidad" />
+
+    <TextView
+        android:id="@+id/lblPantallaIngredientes"
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:text="INGREDIENTES"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ListView
+        android:id="@+id/lstIngredientes"
+        android:layout_width="268dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/idIngRec"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/idIngRec"
+        app:layout_constraintTop_toBottomOf="@+id/idIngRec" />
+
+    <TextView
+        android:id="@+id/lblIngrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ingrediente"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lstIngredientes"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/lstIngredientes"
+        app:layout_constraintTop_toBottomOf="@+id/lstIngredientes" />
+
+    <TextView
+        android:id="@+id/lblCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cantidad"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtIngrediente"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtIngrediente"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngrediente" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Ingrese cantidad"
+        app:layout_constraintEnd_toEndOf="@+id/lblCantidad"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/lblCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/lblCantidad" />
+
+    <EditText
+        android:id="@+id/txtUnidad"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:hint="Ingrese unidad"
+        app:layout_constraintEnd_toEndOf="@+id/lblUnidad"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/lblUnidad"
+        app:layout_constraintTop_toBottomOf="@+id/lblUnidad" />
+
+    <TextView
+        android:id="@+id/lblUnidad"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="12dp"
+        android:text="Unidad"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCantidad"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/txtCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <TextView
+        android:id="@+id/lblUnidad2"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="116dp"
+        android:text="posicion"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCantidad"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/txtCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <Button
+        android:id="@+id/btnAgregarIngrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="AÑADIR INGREDIENTE"
+        app:layout_constraintEnd_toEndOf="@+id/txtUnidad"
+        app:layout_constraintStart_toStartOf="@+id/txtUnidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnidad" />
+
+    <EditText
+        android:id="@+id/txtIngrediente"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:hint="Ingrese nombre de ingrediente"
+        app:layout_constraintEnd_toEndOf="@+id/lblIngrediente"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/lblIngrediente"
+        app:layout_constraintTop_toBottomOf="@+id/lblIngrediente" />
+
+    <TextView
+        android:id="@+id/idIngRec"
+        android:layout_width="153dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblPantallaIngredientes"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="@+id/lblPantallaIngredientes"
+        app:layout_constraintTop_toBottomOf="@+id/lblPantallaIngredientes" />
+
+    <Button
+        android:id="@+id/btnEditarI"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="152dp"
+        android:text="EDITAR"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txtUnidad"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/txtUnidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
